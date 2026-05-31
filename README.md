@@ -16,14 +16,12 @@
             background-repeat: no-repeat; /* Pas de répétition */
             background-attachment: fixed; /* Fond fixe lors du défilement */
         }
-
-        /* Exemple de texte pour voir le fond */
+     /* Exemple de texte pour voir le fond */
        h1{
          color: rgb(45, 50, 90);/* Couleur du texte pour contraster avec le fond */
          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la lisibilité */
          text-align: center; /* Alignement du texte à gauche */}
-
-        h2, h3, p, ul, table {
+ h2, h3, p, ul, table {
             color: rgb(45, 50, 90);
             text-align: left;
         }
@@ -41,14 +39,12 @@
             transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
             box-shadow: 0 4px 6px rgba(8, 0, 40, 0.1); /* Ombre légère */
         }
-
-        /* Effet au survol */
+ /* Effet au survol */
         .mon-bouton:hover {
               background-color: #c9d6ea;  /* Vert plus foncé */
             transform: translateY(-2px); /* Légère remontée */
         }
-
-        /* Effet au clic */
+      /* Effet au clic */
         .mon-bouton:active {
             transform: translateY(0);   /* Retour à la position initiale */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
@@ -60,7 +56,7 @@
         <h2>ce que raconte les films</h2>
        <p> La saga est composée de 5 films :</p>
         <ul>
-            <p><li> Twilight </li>
+         <p></p><li> Twilight </li>
             <li> New Moon </li>
             <li> Eclipse </li>
             <li> Breaking Dawn - Part 1 </li>
