@@ -6,53 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twilight</title>
     <style>
-        /* Applique un fond d'image à toute la page */
         body {
-            margin: 10px; /* Supprime les marges par défaut */
-            height: 100vh; /* Hauteur totale de la fenêtre */
-            background-image: url('https://www.image2url.com/r2/default/images/1779890868091-335a97a1-57ba-4d46-9756-5c86ca5dea85.png'); /* Chemin vers votre image */
-            background-size: cover; /* L'image couvre toute la page */
-            background-position: center; /* Centrage de l'image */
-            background-repeat: no-repeat; /* Pas de répétition */
-            background-attachment: fixed; /* Fond fixe lors du défilement */
+            margin: 10px; 
+            height: 100vh; 
+            background-image: url('https://www.image2url.com/r2/default/images/1779890868091-335a97a1-57ba-4d46-9756-5c86ca5dea85.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
         }
-     /* Exemple de texte pour voir le fond */
        h1{
-         color: rgb(45, 50, 90);/* Couleur du texte pour contraster avec le fond */
-         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la lisibilité */
-         text-align: center; /* Alignement du texte à gauche */}
+         color: rgb(45, 50, 90);
+         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+         text-align: center; }
  h2, h3, p, ul, table {
             color: rgb(45, 50, 90);
             text-align: left;
         }
     </style>
      <style>
-        /* ===== STYLE DU BOUTON ===== */
         .mon-bouton {
-            background-color:  #8fa3bf; /* Couleur de fond */ 
-            border: none;              /* Pas de bordure */
-            color: rgb(0, 0, 0);      /* Couleur du texte */
-            padding: 12px 24px;         /* Espacement interne */
-            text-align: center;         /* Texte centré */
-            font-size: 18px;            /* Taille du texte */
-            cursor: pointer;            /* Curseur en forme de main */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
-            box-shadow: 0 4px 6px rgba(8, 0, 40, 0.1); /* Ombre légère */
+            background-color:  #8fa3bf;
+            border: none;     
+            color: rgb(0, 0, 0);    
+            padding: 12px 24px;         
+            text-align: center;        
+            font-size: 18px;            
+            cursor: pointer;           
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(8, 0, 40, 0.1);
         }
- /* Effet au survol */
         .mon-bouton:hover {
-              background-color: #c9d6ea;  /* Vert plus foncé */
-            transform: translateY(-2px); /* Légère remontée */
+              background-color: #c9d6ea;  
+            transform: translateY(-2px); 
         }
-      /* Effet au clic */
         .mon-bouton:active {
-            transform: translateY(0);   /* Retour à la position initiale */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
-        }
+            transform: translateY(0);  
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  }
     </style>
 </head>
-<body>
-        <h1>Twilight</h1>
+ <body>
+ <h1>Twilight</h1>
         <h2>ce que raconte les films</h2>
        <p> La saga est composée de 5 films :</p>
         <ul>
@@ -124,32 +118,21 @@ La naissance de <strong>Renesmée</strong> attire l’attention des Volturi, un 
 <img src="https://wallpaperaccess.com/full/1375338.jpg" alt="Description de la photo" width="300" height="200">
 <img src="https://www.image2url.com/r2/default/images/1779889345449-ca392e8a-1d8b-4a86-9e81-a0a7e501141d.png" alt="Description de la photo" height="200">
 <h3>ou les regarder?</h3>
-<!-- ===== BOUTON HTML ===== -->
-    <!-- type="button" : évite l'envoi de formulaire -->
-    <!-- class="mon-bouton" : applique le style CSS -->
-    <!-- onclick="afficherMessage()" : déclenche la fonction JS -->
     <button type="button" class="mon-bouton" onclick="ouvrirImage()">
         voici les plateformes où vous pouvez regarder les films Twilight
     </button>
     <script>
         function ouvrirImage() {
-            // URL de l'image à ouvrir
             const imageUrl = "https://www.image2url.com/r2/default/images/1780253148058-fb1f086e-7d8f-4491-81df-600823880b4a.png";
-            
-            // Ouvre l'image dans un nouvel onglet
-            window.open(imageUrl, "_blank");
-        }
-    </script>
-   <!-- Image de la licorne -->
 <img id="magicUnicorn" class="unicorn" 
      src="https://www.image2url.com/r2/default/images/1780255840416-313646cf-b551-4b20-9b7e-4ace0564afb0.jpg" 
      alt="Licorne magique">
 
 <style>
 .unicorn {
-  width: 600px; /* Taille énorme */
+  width: 600px;
   opacity: 0;
-  transform: scale(0.1) rotate(-20deg); /* Commence minuscule */
+  transform: scale(0.1) rotate(-20deg); 
    transition: opacity 1s ease, transform 1s ease;
   position: fixed;
   bottom: 20px;
@@ -159,7 +142,7 @@ La naissance de <strong>Renesmée</strong> attire l’attention des Volturi, un 
 }
 .unicorn.show {
   opacity: 1;
-  transform: scale(1.5) rotate(0deg); /* Devient encore plus grande */
+  transform: scale(1.5) rotate(0deg); 
 }
 </style>
 
@@ -168,12 +151,12 @@ La naissance de <strong>Renesmée</strong> attire l’attention des Volturi, un 
   const unicorn = document.getElementById('magicUnicorn');
 
   document.addEventListener('keydown', (event) => {
-    if (event.code === 'KeyU') { // Touche "U"
+    if (event.code === 'KeyU') { 
       unicorn.classList.add('show');
        setTimeout(() => unicorn.classList.remove('show'), 3000);
     }
   });
 })();
 </script>
-    </body>
+</body>
 </html>
